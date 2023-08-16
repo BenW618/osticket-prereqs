@@ -49,7 +49,16 @@ After connecting to the virtual machine, I first accessed the control panel. Fro
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+The next step involves many files being installed. A list of files used to download will be presented below.
+ 
+- PHPManagerForIIS_V1.5.0.msi
+- rewrite_amd64_en-US.msi
+[Before installing the rest of the files, create the directory C:\PHP]
+- php-7.3.8-nts-Win32-VC15-x86.zip
+- VC_redist.x86.exe
+- mysql-5.5.62-win32.msi
+
+  
 </p>
 <br />
 
@@ -58,7 +67,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+After installing the files, I opened the IIS Manager as an administrator. Next, I clicked the PHP Manager tab and the Register new PHP version. I then typed C:\PHP\php-cgi.exe.
 </p>
 <br />
 
@@ -67,7 +76,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+After registering PHP, I installed the osTicket file. Once the file was installed, I extracted and copied the “upload” folder to c:\inetpub\wwwroot. Within c:\inetpub\wwwroot, I renamed “upload” to “osTicket”. After this, I restarted IIS Manager and clicked the sites tab.
 </p>
 <br />
 
@@ -76,7 +85,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Before I could continue, I had to fix some of the extensions. First, I went back to IIS and clicked the “PHP Manager” tab under osTicket. From there, I enabled three extensions; php_imap.dll, php_intl.dll, php_opcache.dll. Next, I refreshed the osTicket page to observe a few of the errors disappearing.
 </p>
 <br />
 
@@ -85,7 +94,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+I pressed continue on the osTicket page. I proceeded to fill out the needed information until I reached the “Database Setting” category. I then downloaded HeidiSQL to create a new session. I put the sessions information in the “database setting “category and then proceeded to hit the "Install Now" tab.
 </p>
 <br />
 
@@ -94,7 +103,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Next, I browsed to the help desk login page: http://localhost/osTicket/scp/login.php
 </p>
 <br />
 
