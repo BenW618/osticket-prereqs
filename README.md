@@ -29,24 +29,24 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Installation Steps</h2>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+![Create RG_VM](https://github.com/BenW618/osticket-prereqs/assets/140227052/b8d36965-94b1-4a46-ba98-f09c800892c0)
+
 </p>
 <p>
 After logging into my Azure account, I created a Resource Group and a Windows 10 Virtual Machine with 4 Virtual CPUs in that resource group. After creating the virtual machine, I used a remote desktop to connect to the virtual machine.
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+![Enable IIS in Windows CGI](https://github.com/BenW618/osticket-prereqs/assets/140227052/d6d8f59d-5895-4c80-bf54-d7fcf582799c)
+
 </p>
 <p>
 After connecting to the virtual machine, I first accessed the control panel. From there, I clicked the Programs tab. Next, I clicked the Turn the Features On or Off tab and proceeded to check off the boxes viewed in the picture above (Right Side). To confirm that IIS was activated, I typed 127.0.0.1 in the web browser as seen in the picture above(Left Side).
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+![Installation Files](https://github.com/BenW618/osticket-prereqs/assets/140227052/aba984c9-74b8-47f9-b717-4a01cfc936ac)
+
 </p>
 <p>
 The next step involves many files being installed. A list of files used to download will be presented below.
@@ -63,8 +63,8 @@ The next step involves many files being installed. A list of files used to downl
 <br />
 
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+![Register PHP](https://github.com/BenW618/osticket-prereqs/assets/140227052/c6b0055b-d677-4ea4-81b8-79f15a2a8256)
+
 </p>
 <p>
 After installing the files, I opened the IIS Manager as an administrator. Next, I clicked the PHP Manager tab and the Register new PHP version. I then typed C:\PHP\php-cgi.exe.
@@ -72,8 +72,8 @@ After installing the files, I opened the IIS Manager as an administrator. Next, 
 <br />
 
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+![Install osTicket](https://github.com/BenW618/osticket-prereqs/assets/140227052/b4c36fb3-f67a-4390-864e-fc0e478915e1)
+
 </p>
 <p>
 After registering PHP, I installed the osTicket file. Once the file was installed, I extracted and copied the “upload” folder to c:\inetpub\wwwroot. Within c:\inetpub\wwwroot, I renamed “upload” to “osTicket”. After this, I restarted IIS Manager and clicked the sites tab.
@@ -81,8 +81,8 @@ After registering PHP, I installed the osTicket file. Once the file was installe
 <br />
 
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+![Screenshot (7)](https://github.com/BenW618/osticket-prereqs/assets/140227052/5e5dcc25-8dfb-4286-9314-f658c1ab4b54)
+
 </p>
 <p>
 Before I could continue, I had to fix some of the extensions. First, I went back to IIS and clicked the “PHP Manager” tab under osTicket. From there, I enabled three extensions; php_imap.dll, php_intl.dll, php_opcache.dll. Next, I refreshed the osTicket page to observe a few of the errors disappearing.
@@ -90,8 +90,8 @@ Before I could continue, I had to fix some of the extensions. First, I went back
 <br />
 
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+![Screenshot (9)](https://github.com/BenW618/osticket-prereqs/assets/140227052/bdf586d0-dc26-4cd2-aefa-e3e6c9a0e349)
+
 </p>
 <p>
 I pressed continue on the osTicket page. I proceeded to fill out the needed information until I reached the “Database Setting” category. I then downloaded HeidiSQL to create a new session. I put the sessions information in the “database setting “category and then proceeded to hit the "Install Now" tab.
@@ -99,8 +99,8 @@ I pressed continue on the osTicket page. I proceeded to fill out the needed info
 <br />
 
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+![Screenshot (10)](https://github.com/BenW618/osticket-prereqs/assets/140227052/6096f8ec-9d04-4a52-88d2-61993341c00c)
+
 </p>
 <p>
 Next, I browsed to the help desk login page: http://localhost/osTicket/scp/login.php
@@ -108,8 +108,8 @@ Next, I browsed to the help desk login page: http://localhost/osTicket/scp/login
 <br />
 
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+![Screenshot (11)](https://github.com/BenW618/osticket-prereqs/assets/140227052/05af93eb-f4a1-4da1-acf2-b921cbfddf16)
+
 </p>
 <p>
 </p>
